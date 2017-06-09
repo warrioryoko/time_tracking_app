@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Clock in at work",
+        "project": "Daily events",
+        "elapsed": 5456099,
+        "id": "0a4a79cb-b06d-4cb1-883d-549a1e3b66d7"
+    },
+    {
+        "title": "Clean the refrigerator",
+        "project": "House chores",
+        "elapsed": 1273998,
+        "id": "a73c1d19-f32d-4aff-b470-cea4e792406a"
+    },
+    {
+        "title": "Work on learning Redux",
+        "project": "After-work chores",
+        "id": "2c43306e-5b44-4ff8-8753-33c35adbd06f",
+        "elapsed": 40674118158,
+        "runningSince": null
+    },
+    {
+        "title": "Get an oil change",
+        "project": "Car maintenance",
+        "id": "0d454f30-e91d-457a-b416-adedb0090d07",
+        "elapsed": 512674,
+        "runningSince": null
+    },
+    {
+        "title": "Playing Persona 5",
+        "project": "Getting through Kamoshida's palace",
+        "id": "d0ed8f2a-7e17-4784-a1f6-817da13f17ac",
+        "elapsed": 496224,
+        "runningSince": null
+    }
+]

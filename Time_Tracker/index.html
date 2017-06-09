@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Timers App</title>
+    <link rel="stylesheet" href="./semantic/dist/semantic.css" /> // I like Semantic UI instead of say, Bootstrap. It has a nice integration guide for React, and everything!
+    <link rel="stylesheet" href="style.css" />
+    <script src="vendor/babel-standalone.js"></script>
+    <script src="vendor/react.js"></script>
+    <script src="vendor/react-dom.js"></script>
+    <script src="vendor/uuid.js"></script> // uuid saves every headache you'd otherwise get, when you realize you have to keep track of which object is which
+    <script src="vendor/fetch.js"></script> // I named the source folder "vendor", since it has JavaScript I need created by other organizations. Like the React framework.
+  </head>
+
+  // Okay. So, I'm using the Fetch API, since it's just so much easier than using the old XMLHttpRequest back from the days we all used raw JQuery and AJAX requests.
+  // It's incorporated into Firefox 39 and later, and Chrome 42 and later, but to ensure a (more) consistent user experience, I need to package it in the app
+  // just in case. I'd prefer to just include it in the application files, rather than download it at runtime, in much the same way as handling JQuery.
+  // Fetch returns promises. I'm just fine with using Promises, and for the most part, otherwise confining callbacks to the way I design my handlers to confine
+  // state to one component
+
+  <body>
+    <div id="main" class="main ui">
+      <h1 class="ui dividing centered header">Timers</h1>
+      <div id="content"></div>
+    </div>
+    <script type="text/babel" src="./js/client.js"></script>  // I wrote the front-end functionality for the timers app in React, then realized I needed to write Node and Express
+    <script type="text/babel" src="./js/helpers.js"></script> // code if I wanted to persist the information in one central place... client.s and server.js is where that code went
+    <script
+      type="text/babel"
+      data-plugins="transform-class-properties"
+      src="./js/app.js"
+    ></script>
+  </body>
+                                                              // helpers.js is where I put random logic to do things like calculate the display time. Put stuff like that in helper
+                                                              // files, not in the main application file to keep everything organized and readable. I'd rather keep my code terse and
+                                                              // readable, even if my comments are verbose
+</html>
