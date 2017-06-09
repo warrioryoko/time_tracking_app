@@ -1,6 +1,6 @@
 {
   "name": "Timers_App",
-  "version": "1.0",
+  "version": "1.1.0",
   "author": "Ron Yonker",
   "scripts": {
     "go": "open http://localhost:3000; npm run server",
